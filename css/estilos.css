@@ -375,10 +375,6 @@ Lo que haremos será simplemente poner la propiedad visibility en visible, y reg
 
 
 /* ICONOS DE CONTACTOS */
-#icons {
-    height: 5%;
-    width: 5%;
-}
 #icons:hover {
     animation: icons 1s;
     animation-timing-function: ease-in-out;
