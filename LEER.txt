@@ -1,0 +1,9 @@
+Hola Profe,
+
+La página de la tienda ya es responsive y use Bootstrap5 para ello.
+He cambiado el diseño de la página, el cambio se nota más en el menú y
+la página de juegos, donde las imágenes tienen otros efecto de animación.
+
+Si no logra ver la página por el .zip veála por aquí:
+
+https://papaya-malasada-c367d5.netlify.app

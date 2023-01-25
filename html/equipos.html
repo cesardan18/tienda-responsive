@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- LINK DE ESTILOS -->
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <!-- LINK DE FUENTE ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- TITULO -->
+    <title>Equipos</title>
+
+    <!-- LINK DE FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/img/inicio-img/control.ico">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid mb-5 p-0">
+            <!-- HEADER -->
+            <header class="d-flex flex-wrap py-3 mb-5 border-bottom">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/index.html">
+                            <img id="logo" src="/img/inicio-img/logo.png" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul id="menu" class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 fs-5 fw-bolder" href="/index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 fs-5 fw-bolder" href="/html/equipos.html">EQUIPOS</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle m-2 fs-5 fw-bolder" data-bs-toggle="dropdown"
+                                        href="/html/juegos.html">JUEGOS</a>
+                                    <ul id="sub-menu" class="dropdown-menu">
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Left 4 Dead
+                                                2</a></li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Resident
+                                                Evil 4 Remake</a></li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Counter
+                                                Strike</a></li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Call of
+                                                Duty</a></li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder"
+                                                href="/html/juegos.html">Minecraft</a></li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">GTA: San
+                                                Andreas</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 fs-5 fw-bolder" href="/html/galeria.html">GALERÍA DE
+                                        IMAGENES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link m-2 fs-5 fw-bolder" href="/html/contacto.html">CONTACTO</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="login">
+                            <a class="nav-link m-2 fs-5 fw-bolder" href="/html/login.html">INICIAR SESIÓN</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!---->
+
+            <!-- TITULO DE EQUIPOS -->
+            <section class="container-fluid p-3">
+                <div class="text-center fs-1 fw-bolder">
+                    <span class="jump">E</span>
+                    <span class="jump">Q</span>
+                    <span class="jump">U</span>
+                    <span class="jump">I</span>
+                    <span class="jump">P</span>
+                    <span class="jump">O</span>
+                    <span class="jump">S</span>
+                </div>
+            </section>
+            <!---->
+
+            <!-- EQUIPOS -->
+            <section class="container-fluid px-5 py-2">
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <div id="card">
+                            <div class="card2">
+                                <img src="/img/equipos-img/pc1.png" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                    <h4><b>PC Gamer Draco Plus Core I5 10400F</b></h4>
+                                    <p>Precio S/ 3,699<br>
+                                        Precio Regular s/ 3,999</p>
+                                    <!-- area de popup -->
+                                    <p><a href="#popup">Ver configuración</a></p>
+                                    <div id="popup" class="overlay">
+                                        <div id="popupBody">
+                                            <h2>Características</h2>
+                                            <a id="cerrar" href="#">&times;</a>
+                                            <div class="popupContent">
+                                                <ul>
+                                                    <li>CPU Intel Core i5 10400F / 2.90 GHz, 12 MB Caché L3</li>
+                                                    <li>Disco Duro HDD 1TB</li>
+                                                    <li>Disco Sólido M2 256GB NVME</li>
+                                                    <li>Memoria RAM 16GB DDR4 2666 MHz</li>
+                                                    <li>Monitor 24" FHD Curvo</li>
+                                                    <li>Mainboard B460M DVI/ HDMI</li>
+                                                    <li>Tarjeta de Video Nvidia GTX1050 4GB GDDR5</li>
+                                                    <li>Kit Gamer: Teclado, mouse</li>
+                                                    <li>Fuente Real 550 Wr</li>
+                                                    <li>Garantía 1 año</li>
+                                                    <li>Producto: Nuevo</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- aquí termina el área del popup -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-3">
+                        <div id="card">
+                            <div class="card2">
+                                <img src="/img/equipos-img/pc2.png" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                    <h4><b>PC Gamer Draco Green Core I5 10TH</b></h4>
+                                    <p>Precio S/ 2,999<br>
+                                        Precio Regular s/ 3,599</p>
+                                    <!-- area de popup -->
+                                    <p><a href="#popup2">Ver configuración</a></p>
+                                    <div id="popup2" class="overlay">
+                                        <div id="popupBody2">
+                                            <h2>Características</h2>
+                                            <a id="cerrar" href="#">&times;</a>
+                                            <div class="popupContent">
+                                                <ul>
+                                                    <li>CPU Intel Core i5 10400F</li>
+                                                    <li>2.90 GHz, 12 MB Caché L3</li>
+                                                    <li>Disco Sólido SSD 500GB</li>
+                                                    <li>Memoria RAM 16GB DDR4 2666 MHz</li>
+                                                    <li>Monitor LED 22" FHD Widescreen</li>
+                                                    <li>Mainboard H510 DVI/ HDMI</li>
+                                                    <li>Tarjeta de Video GT1030</li>
+                                                    <li>Kit Gamer: Teclado, mouse</li>
+                                                    <li>Fuente Real 550 W</li>
+                                                    <li>Garantía 1 año</li>
+                                                    <li>Producto: Nuevo</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- aquí termina el área del popup -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-3">
+                        <div id="card">
+                            <div class="card2">
+                                <img src="/img/equipos-img/pc3.png" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                    <h4><b>PC Gamer Draco Plus Core I5 10400F</b></h4>
+                                    <p>Precio S/ 2,599<br>
+                                        Precio Regular s/ 3,099</p>
+                                    <!-- area de popup -->
+                                    <p><a href="#popup3">Ver configuración</a></p>
+                                    <div id="popup3" class="overlay">
+                                        <div id="popupBody3">
+                                            <h2>Características</h2>
+                                            <a id="cerrar" href="#">&times;</a>
+                                            <div class="popupContent">
+                                                <ul>
+                                                    <li>CPU Intel Core i5 10400F</li>
+                                                    <li>2.9 GHz Cache 12MB</li>
+                                                    <li>Disco Sólido SSD 256 GB</li>
+                                                    <li>Memoria RAM 8GB DDR4 2666 MHz</li>
+                                                    <li>Monitor LED 19" HD Widescreen</li>
+                                                    <li>Mainboard H410 DVI/ HDMI</li>
+                                                    <li>Tarjeta de Video Nvidia GT1030 2GB </li>
+                                                    <li>Kit Gamer: Teclado, mouse</li>
+                                                    <li>Fuente Real 550 W</li>
+                                                    <li>Garantía 1 año</li>
+                                                    <li>Producto: Nuevo</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- aquí termina el área del popup -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <div id="card">
+                            <div class="card2">
+                                <img src="/img/equipos-img/lap1.png" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                    <h4><b>Laptop Acer Predator Triton Core I7</b></h4>
+                                    <p>Precio S/ 6,999<br>
+                                        Precio Regular s/ 8,799<br></p>
+                                    <!-- area de popup -->
+                                    <p><a href="#popup4">Ver configuración</a></p>
+                                    <div id="popup4" class="overlay">
+                                        <div id="popupBody4">
+                                            <h2>Características</h2>
+                                            <a id="cerrar" href="#">&times;</a>
+                                            <div class="popupContent">
+                                                <ul>
+                                                    <li>Intel Core i7 11375H 3.3GHz </li>
+                                                    <li>4 núcleos, caché 12MB</li>
+                                                    <li>Disco sólido SSD 512GB</li>
+                                                    <li>RAM 32GB DDR4 </li>
+                                                    <li>Pantalla 14" FHD 144Hz</li>
+                                                    <li>Tarjeta de Video Nvidia Geforce RTX 3060 6GB</li>
+                                                    <li>Bluetooth / WebCam </li>
+                                                    <li>HDMI / USB 3.2 / DisplayPort</li>
+                                                    <li>Windows 10</li>
+                                                    <li>Teclado en inglés RGB retroiluminado</li>
+                                                    <li>Batería 4 celdas</li>
+                                                    <li>Garantia: 1 año</li>
+                                                    <li>Producto: Nueva</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- aquí termina el área del popup -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 p-3">
+                        <div id="card">
+                            <div class="card2">
+                                <img src="/img/equipos-img/lap2.png" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                    <h4><b>Laptop HP 15T-DK200 GAMING 15.6"</b></h4>
+                                    <p>Precio S/ 6,999<br>
+                                        Precio Regular s/ 7,799</p>
+                                    <!-- area de popup -->
+                                    <p><a href="#popup5">Ver configuración</a></p>
+                                    <div id="popup5" class="overlay">
+                                        <div id="popupBody5">
+                                            <h2>Características</h2>
+                                            <a id="cerrar" href="#">&times;</a>
+                                            <div class="popupContent">
+                                                <ul>
+                                                    <li>Laptop Intel Core i7 11370H 3.3 GHz</li>
+                                                    <li>4 núcleos, Caché 12 MB</li>
+                                                    <li>Disco Sólido SSD 512GB</li>
+                                                    <li>RAM 16 GB DDR4 3200 MHz </li>
+                                                    <li>Pantalla 15.6" FHD 144Hz</li>
+                                                    <li>Video Nvidia GeForce RTX 3050 4GB</li>
+                                                    <li>Bluetooth / WebCam</li>
+                                                    <li>Windows 10</li>
+                                                    <li>USB 3.2 Gen1 / HDMI / USB 3.2 tipo C / lector SDXC</li>
+                                                    <li>Teclado en Inglés</li>
+                                                    <li>Batería 3 celdas 200W</li>
+                                                    <li>Garantia: 1 año</li>
+                                                    <li>Producto: Nueva</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- aquí termina el área del popup -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <div id="card">
+                            <div class="card2">
+                                <img src="/img/equipos-img/lap3.png" alt="Avatar" style="width:100%">
+                                <div class="container">
+                                    <h4><b>Laptop MSI KATANA GF76 17.3" Core</b></h4>
+                                    <p>Precio S/ 7,299<br>
+                                        Precio Regular s/ 9,399<br></p>
+                                    <!-- area de popup -->
+                                    <p><a href="#popup6">Ver configuración</a></p>
+                                    <div id="popup6" class="overlay">
+                                        <div id="popupBody6">
+                                            <h2>Características</h2>
+                                            <a id="cerrar" href="#">&times;</a>
+                                            <div class="popupContent">
+                                                <ul>
+                                                    <li>Laptop Intel Core i7-11800H 2.3GHz</li>
+                                                    <li>8 núcleos, caché 24MB</li>
+                                                    <li>Disco Duro HDD 1TB</li>
+                                                    <li>Disco Sólido M.2 512GB</li>
+                                                    <li>RAM 32 GB DDR4 </li>
+                                                    <li>Pantalla 17.3" FHD 144Hz IPS</li>
+                                                    <li>Video Nvidia GeForce RTX 3050Ti 4GB GDDR6</li>
+                                                    <li>Bluetooth 5.2 / WebCam </li>
+                                                    <li>Teclado en Inglés</li>
+                                                    <li>Windows 10 H</li>
+                                                    <li>Batería 3 celdas</li>
+                                                    <li>Garantía: 1 año</li>
+                                                    <li>Producto: Nueva</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- aquí termina el área del popup -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!---->
+        </div>
+    </main>
+</body>
+
+</html>

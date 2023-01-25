@@ -1,0 +1,542 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #180838;
+    color: white;
+}
+nav {
+    background-color: #0f012c;
+}
+.jump {
+    font-size: 50px;
+    font-weight: 600;
+    animation: jump 1s infinite;
+    animation-timing-function: ease-in;
+    display: inline-block;
+    transform: translate(0);
+}
+/**/
+
+
+
+/* LOGO */
+#logo:hover {
+    transform: scale(1.2);
+}
+/**/
+
+
+
+
+/* MENU */
+#menu>li>a {
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+#menu>li>a:hover {
+    color: #F0007B;
+    transform: scale(1.2);
+}
+/**/
+
+
+
+
+/* SUBMENU */
+#sub-menu {
+    background-color: #0f012c;
+}
+#sub-menu>li>a {
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+#sub-menu>li>a:hover {
+    background-color: #0f012c;
+    color: #F0007B;
+    transform: scale(1.2);
+}
+/**/
+
+
+
+
+/* INICO DE SESIÓN */
+.login>a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+.login>a:hover {
+    color: #F0007B;
+    transform: scale(1.2);
+}
+/**/
+
+
+
+
+/* INICIO */
+#cont-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    height: 100vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/img/inicio-img/img-index.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: imagen-inicio 2s;
+    animation-timing-function: ease-in-out;
+    transform: (0);
+}
+#centrado {
+    text-align: center;
+    color: whitesmoke;
+}
+#p-img {
+    animation: inicio 2s;
+    animation-timing-function: ease-in-out;
+    transform: (0);
+}
+/**/
+
+
+
+
+/* VIDEOS Y AUDIOS */
+#bg-video {
+    background-color: #22152c;
+    border: solid #27a2e9;
+    border-radius: 25px;
+}
+#bg-audio {
+    background-color: #22152c;
+    border: solid #ff11ce;
+    border-radius: 25px;
+}
+/**/
+
+
+
+/* EQUIPOS */
+#card {
+    /* Add shadows to create the "card" effect */
+    background-image: linear-gradient(163deg, #FF11CE 0%, #27a2e9 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+.card2 {
+    background-color: #22152C;
+    border-radius: 0px;
+    transition: all .2s;
+}
+
+/* On mouse-over, add a deeper shadow */
+#card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(244, 247, 245, 0.61);
+}
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+
+/* Popup de equipos 
+clase overlay que hará el efecto modal. El truco consiste en poner fija la posición de la capa 
+y sus 4 direcciones en 0. La propiedad visibility estará en hidden. La opacidad será 0 inicialmente, 
+haciendo una simple transición de medio segundo.
+*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* a pseudo clase target que funciona cuando un elemento está activo, como en este caso la clase overlay. 
+Lo que haremos será simplemente poner la propiedad visibility en visible, y regresar la opacidad en 1.
+*/
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.container>p>a {
+    text-decoration: none;
+    color: #27a2e9;
+}
+#popupBody {
+    width: 80%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: rgb(240, 0, 123);
+    position: relative;
+    transition: all 3s ease-in-out;
+    margin: 20% auto;
+}
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#popupBody2 {
+    width: 80%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: rgb(241, 0, 123);
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;
+}
+#popupBody3 {
+    width: 80%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: rgb(241, 0, 123);
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;
+}
+#popupBody4 {
+    width: 80%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: rgb(241, 0, 123);
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;
+}
+#popupBody5 {
+    width: 80%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: rgb(241, 0, 123);
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;
+}
+#popupBody6 {
+    width: 80%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: rgb(241, 0, 123);
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: 20% auto;
+}
+/**/
+
+
+
+/* ANIMACIÓN PARA CARDS DE JUEGOS */
+.flip-card {
+    background-color: transparent;
+    width: 18.75rem;
+    height: 25rem;
+    perspective: 62.5rem;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    background-color: #ff11ce;
+    color: whitesmoke;
+    transform: rotateY(180deg);
+
+}
+/**/
+
+
+
+/*GALERÍA DE IMAGENES*/
+.h1-galeria {
+    text-align: center;
+    /*padding: 20px 0px;*/
+}
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: auto;
+    overflow: hidden;
+    /*Los elementos se quedan dentro de la caja*/
+    width: 95%;
+    gap: 10px;
+    padding: 40px 0px;
+}
+#galeria>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px #fd1f92;
+}
+#galeria a:hover img {
+    filter: blur(2px);
+    /*Filtro blur*/
+    animation-name: blur;
+    animation-duration: 0.5s;
+}
+#galeria img {
+    width: 100%;
+    height: 300px;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+/*light-box*/
+.light-box {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2000;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0);
+}
+.light-box img {
+    width: 75vw;
+    max-height: 70vh;
+}
+.light-box:target {
+    transform: scale(1);
+}
+.close {
+    display: block;
+    position: absolute;
+    background: #FF11CE;
+    color: #180838;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 1000;
+    line-height: 25px;
+    border-radius: 50%;
+    right: 40px;
+    top: 40px;
+    width: 25px;
+    height: 25px;
+}
+.next {
+    display: block;
+    color: #FF11CE;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    width: 50px;
+    height: 50px;
+}
+/**/
+
+
+
+/* ICONOS DE CONTACTOS */
+#icons {
+    height: 5%;
+    width: 5%;
+}
+#icons:hover {
+    animation: icons 1s;
+    animation-timing-function: ease-in-out;
+    transform: scale(1);
+    animation-fill-mode: forwards;
+}
+/**/
+
+
+
+/* KEYFRAMES PARA IMAGEN DE INICIO*/
+@keyframes imagen-inicio {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+}
+/**/
+
+/* KEYFRAMES PARA TITULO DE INICIO */
+@keyframes inicio {
+    0% {
+        transform: rotatey(0deg) scale(0);
+    }
+
+    80% {
+        transform: rotatey(180deg) scale(2);
+    }
+}
+/**/
+
+/* KEYFRAMES PARA GALERIA */
+@keyframes blur {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+
+    to {
+        transform: rotate(10deg) scale(1.3);
+    }
+}
+/**/
+
+/* KEYFRAMES PARA TITULOS */
+span:nth-child(1) {
+    animation-delay: 0;
+}
+
+span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+span:nth-child(17) {
+    animation-delay: 1.6s;
+}
+
+span:nth-child(18) {
+    animation-delay: 1.7s;
+}
+
+span:nth-child(19) {
+    animation-delay: 1.8s;
+}
+
+span:nth-child(20) {
+    animation-delay: 1.9s;
+}
+
+span:nth-child(21) {
+    animation-delay: 2s;
+}
+
+@keyframes jump {
+    0% {
+        transform: translatey(0);
+    }
+
+    10% {
+        transform: translatey(-5px);
+    }
+
+    50% {
+        transform: translatey(20px);
+    }
+
+    80% {
+        transform: translatey(10px);
+    }
+}
+/**/
+
+/* KEYFRAMES PARA ICONOS DE CONTACTOS */
+@keyframes icons {
+    from {
+        transform: rotatex(0deg) scale(1);
+    }
+
+    to {
+        transform: rotatex(360deg) scale(1.5, 1.5);
+    }
+}
+/**/
