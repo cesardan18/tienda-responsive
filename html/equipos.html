@@ -51,24 +51,18 @@
                                 <li class="nav-item">
                                     <a class="nav-link m-2 fs-5 fw-bolder" href="/html/equipos.html">EQUIPOS</a>
                                 </li>
+                                <!-- DROPDOWNS -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle m-2 fs-5 fw-bolder" data-bs-toggle="dropdown"
                                         href="/html/juegos.html">JUEGOS</a>
                                     <ul id="sub-menu" class="dropdown-menu">
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Left 4 Dead
-                                                2</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Resident
-                                                Evil 4 Remake</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Counter
-                                                Strike</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Call of
-                                                Duty</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder"
-                                                href="/html/juegos.html">Minecraft</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">GTA: San
-                                                Andreas</a></li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Juegos</a>
+                                        </li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="#barra">Estadísticas de los
+                                                juegos</a></li>
                                     </ul>
                                 </li>
+                                <!-- DROPDOWNS -->
                                 <li class="nav-item">
                                     <a class="nav-link m-2 fs-5 fw-bolder" href="/html/galeria.html">GALERÍA DE
                                         IMAGENES</a>
@@ -86,6 +80,25 @@
             </header>
             <!---->
 
+            <!-- BREADCRUMB -->
+            <section class="container-fluid p-0">
+                <nav class="bread d-flex" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb p-2 my-0">
+                        <li class="breadcrumb-item"><a href="/index.html" class="fw-bold text-light">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/html/equipos.html" class="fw-bold text-light">Equipos</a>
+                        </li>
+                    </ol>
+
+                    <!-- BADGE -->
+                    <button type="button" class="btn btn-primary m-1 py-1">
+                        Notificaciones <span class="badge bg-danger">+99</span>
+                    </button>
+                    <!---->
+
+                </nav>
+            </section>
+            <!---->
+
             <!-- TITULO DE EQUIPOS -->
             <section class="container-fluid p-3">
                 <div class="text-center fs-1 fw-bolder">
@@ -98,6 +111,16 @@
                     <span class="jump">S</span>
                 </div>
             </section>
+            <!---->
+
+            <!-- JUMBOTRON -->
+            <div class="jumbotron m-3 p-4 rounded">
+                <h1 class="display-4 fw-bold">Hola, Gamer!</h1>
+                <p class="lead">Tenemos las mejores ofertas en computadoras y laptops para que le des el siguiente nivel
+                    a tu setup</p>
+                <hr class="my-4">
+                <p>Verás diferentes computadoras con sus características bien detallas.</p>
+            </div>
             <!---->
 
             <!-- EQUIPOS -->
@@ -333,6 +356,24 @@
                     </div>
             </section>
             <!---->
+
+            <!-- PAGINATION -->
+            <!-- No le agregue enlaces ya que mi página no tiene este tipo de secciones -->
+            <div aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+
         </div>
     </main>
 </body>

@@ -16,6 +16,9 @@ nav {
     display: inline-block;
     transform: translate(0);
 }
+a{
+    text-decoration: none;
+}
 /**/
 
 
@@ -28,6 +31,16 @@ nav {
 
 
 
+/* BREADCRUMB Y BADGE */
+.bread{
+    background-color: #F0007B;
+    justify-content: space-between;
+}
+.btn{
+    background-color: #22152C;
+    border: none;
+}
+/**/
 
 /* MENU */
 #menu>li>a {
@@ -118,6 +131,15 @@ nav {
     border-radius: 25px;
 }
 /**/
+
+
+
+/* JUMBOTRON */
+.jumbotron{
+    background-color: #22152C;
+}
+/**/
+
 
 
 

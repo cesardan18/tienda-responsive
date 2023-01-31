@@ -51,24 +51,18 @@
                                 <li class="nav-item">
                                     <a class="nav-link m-2 fs-5 fw-bolder" href="/html/equipos.html">EQUIPOS</a>
                                 </li>
+                                <!-- DROPDOWNS -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle m-2 fs-5 fw-bolder" data-bs-toggle="dropdown"
                                         href="/html/juegos.html">JUEGOS</a>
                                     <ul id="sub-menu" class="dropdown-menu">
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Left 4 Dead
-                                                2</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Resident
-                                                Evil 4 Remake</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Counter
-                                                Strike</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Call of
-                                                Duty</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder"
-                                                href="/html/juegos.html">Minecraft</a></li>
-                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">GTA: San
-                                                Andreas</a></li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="/html/juegos.html">Juegos</a>
+                                        </li>
+                                        <li><a class="dropdown-item fs-5 fw-bolder" href="#barra">Estadísticas de los
+                                                juegos</a></li>
                                     </ul>
                                 </li>
+                                <!---->
                                 <li class="nav-item">
                                     <a class="nav-link m-2 fs-5 fw-bolder" href="/html/galeria.html">GALERÍA DE
                                         IMAGENES</a>
@@ -86,6 +80,27 @@
             </header>
             <!---->
 
+            <!-- BREADCRUMB -->
+            <section class="container-fluid p-0">
+                <nav class="bread d-flex" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb p-2 my-0">
+                        <li class="breadcrumb-item"><a href="/index.html" class="fw-bold text-light">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/html/juegos.html" class="fw-bold text-light">Juegos</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="/html/juegos.html" class="fw-bold text-light">Left 4 dead
+                                2</a></li>
+                    </ol>
+
+                    <!-- BADGE -->
+                    <button type="button" class="btn btn-primary m-1 py-1">
+                        Notificaciones <span class="badge bg-danger">+99</span>
+                    </button>
+                    <!---->
+
+                </nav>
+            </section>
+            <!---->
+
             <!-- TITULO DE JUEGOS -->
             <section class="container-fluid p-3">
                 <div class="text-center fs-1 fw-bolder">
@@ -97,6 +112,16 @@
                     <span class="jump">S</span>
                 </div>
             </section>
+            <!---->
+
+            <!-- JUMBOTRON -->
+            <div class="jumbotron m-3 p-4 rounded">
+                <h1 class="display-4 fw-bold">Hola, Gamer!</h1>
+                <p class="lead">Te mostramos los juegos más populares de los últimos tiempos con dinámicas fascinantes
+                </p>
+                <hr class="my-4">
+                <p>Verás diferentes juegos con su descripción al hacerlos girar.</p>
+            </div>
             <!---->
 
             <!-- JUEGOS -->
@@ -186,7 +211,8 @@
                                     </div>
                                     <div class="flip-card-back p-3 rounded">
                                         <h3 class="text-center fs-2 fw-bold">lEFT 4 DEAD 2</h3>
-                                        <p class="text-md-start">Ambientado en el apocalipsis zombi, Left 4 Dead 2 (L4D2)
+                                        <p class="text-md-start">Ambientado en el apocalipsis zombi, Left 4 Dead 2
+                                            (L4D2)
                                             es la esperadísima secuela del galardonado
                                             Left 4 Dead, el juego cooperativo número 1 de 2008.
                                             Este FPS cooperativo de acción y terror os llevará a ti y a tus amigos por
@@ -212,7 +238,8 @@
                                     </div>
                                     <div class="flip-card-back p-3 rounded">
                                         <h3 class="text-center fs-2 fw-bold">MINECRAFT</h3>
-                                        <p class="text-md-start">Crea, explora, sobrevive y vuelta a empezar. Consigue las
+                                        <p class="text-md-start">Crea, explora, sobrevive y vuelta a empezar. Consigue
+                                            las
                                             ediciones de Minecraft Java y Bedrock
                                             juntas para Windows. En Minecraft: Java &amp; Bedrock Edition, podrás
                                             cambiar de juego fácilmente
@@ -237,7 +264,8 @@
                                     </div>
                                     <div class="flip-card-back p-3 rounded w-100 h-100">
                                         <h3 class="text-center fs-2 fw-bold">GTA: SAN ANDREAS</h3>
-                                        <p class="text-md-start">Hace cinco años, Carl Johnson escapó de la presión de la
+                                        <p class="text-md-start">Hace cinco años, Carl Johnson escapó de la presión de
+                                            la
                                             vida en Los Santos, San Andreas, una ciudad
                                             desgarrada por los enfrentamientos entre bandas, las drogas y la corrupción.
                                             Donde las estrellas de
@@ -256,6 +284,59 @@
                     </div>
                 </div>
             </section>
+            <!---->
+
+            <!-- BARRAS DE PROGRESO -->
+            <section id="barra" class="container-fluid">
+                <h2 class="fw-bold text-center">ESTADÍSTICA DE LOS JUEGOS</h2>
+                <p class="fw-bold my-0">CALL OF DUTY: MODERN WARFARE 2</p>
+                <div class="progress mb-3" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar"
+                        style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="fw-bold my-0">GRAND THEFT AUTO: SAN ANDREAS</p>
+                <div class="progress mb-3" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="fw-bold my-0">COUNTER STRIKE 1.6</p>
+                <div class="progress mb-3" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                        style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="fw-bold my-0">MINECRAFT</p>
+                <div class="progress mb-3" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                        style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="fw-bold my-0">RESIDENT EVIL 4 REMAKE</p>
+                <div class="progress mb-3" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                        style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="fw-bold my-0">LEFT 4 DEAD 2</p>
+                <div class="progress mb-3" style="height: 20px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                        style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </section>
+            <!---->
+
+            <!-- PAGINATION -->
+            <!-- No le agregue enlaces ya que mi página no tiene este tipo de secciones -->
+            <div aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                    </li>
+                </ul>
+            </div>
             <!---->
 
         </div>
